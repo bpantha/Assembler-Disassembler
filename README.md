@@ -2,15 +2,15 @@
 
 # LC4 Assembler
 
-This project is a mini-LC4 Assembler implemented in the C programming language. It reads in assembly language code from a text file (.ASM) and generates its machine equivalent in the form of a binary file (.OBJ). The assembler follows the file-oriented approach of C, treating files as I/O devices.
+This project is a mini-LC4 Assembler-Disassembler implemented in the C programming language. The assembly program reads in assembly language code from a text file (.ASM) and generates its machine equivalent in the form of a binary file (.OBJ). The assembler follows the file-oriented approach of C, treating files as I/O devices. The disassembler will open and read in a .OBJ file created by PennSim, parse it, and load it into a linked list that will represent the LC4’s program and data memories.
 
-## Features
+## Features of Assembler-Disassembler
 
-The LC4 Assembler project offers the following features:
+The Assembler-Disassembler project offers the following features:
 
-1. **Text File Input**: The program reads assembly language code from a text file (.ASM) as input.
+1. **Text File Input**: The program reads assembly language code from a text file (.ASM) or (.OBJ) as input.
 
-2. **Binary File Output**: It generates a binary file (.OBJ) containing the machine code equivalent of the input assembly language.
+2. **Binary or Assembly File Output**: Assembler program generates a binary file (.OBJ) containing the machine code equivalent of the input assembly language. The disassembler program generates the label, address, contents, and assembly of the (.OBJ) file.
 
 3. **Support for Text and Binary Files**: The program handles both text and binary files, distinguishing between the two categories.
 
@@ -18,31 +18,8 @@ The LC4 Assembler project offers the following features:
 
 5. **Conversion to Machine Code**: The assembler converts assembly language instructions into their machine code representations according to the LC4 instruction set architecture.
 
-## Getting Started
 
-To get started with the LC4 Assembler, follow these steps:
-
-1. Clone the repository:
-
-   ```
-   git clone https://github.com/bpantha/Assembler
-   ```
-
-2. Compile the source code using Makefile:
-
-   ```
-   make all
-   ```
-
-3. Execute the program, providing the input assembly file as a command-line argument:
-
-   ```
-   ./lc4_assembler input.asm
-   ```
-
-   This will generate the corresponding binary file, `input.obj`, in the current directory.
-
-## Example
+## Example of Assembler
 
 Suppose we have an assembly file named `example.asm` with the following content:
 
