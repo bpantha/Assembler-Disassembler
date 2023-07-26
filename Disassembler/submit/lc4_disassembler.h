@@ -3,7 +3,7 @@
 /* Purpose   : This function declares functions for lc4_dissembler.c	*/
 /*      																*/
 /*             															*/
-/* Author(s) : tjf 														*/
+/* Author(s) : Bidur Pantha												*/
 /************************************************************************/
 
 #include <stdio.h>
