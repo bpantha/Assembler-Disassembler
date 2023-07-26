@@ -1,7 +1,5 @@
 # Assembler-Disassembler
 
-# LC4 Assembler
-
 This project is a mini-LC4 Assembler-Disassembler implemented in the C programming language. The assembly program reads in assembly language code from a text file (.ASM) and generates its machine equivalent in the form of a binary file (.OBJ). The assembler follows the file-oriented approach of C, treating files as I/O devices. The disassembler will open and read in a .OBJ file created by PennSim, parse it, and load it into a linked list that will represent the LC4’s program and data memories.
 
 ## Features of Assembler-Disassembler
