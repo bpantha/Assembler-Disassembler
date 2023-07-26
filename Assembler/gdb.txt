@@ -1,0 +1,21 @@
+Breakpoint 1 at 0x401ac9: file assembler.c, line 20.
+Starting program: /home/codio/workspace/assembler 
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffe498) at assembler.c:20
+__libc_start_main (main=0x401ab0 <main>, argc=1, argv=0x7fffffffe498, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffe488) at ../csu/libc-start.c:344
+[Inferior 1 (process 2474) exited with code 01]
+Undefined command: "exit".  Try "help".
+This command cannot be used at the top level.
+The program is not being run.
+Error detected on fd 0
+error detected on stdin
+Starting program: /home/codio/workspace/assembler test2.asm
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffe488) at assembler.c:86
+parse_instruction (instr=0x7fffffff7fd0 "ADD HFJJDKS", instr_bin_str=0x7fffffff7910 "") at asm_parser.c:380
+parse_add (instr=0x7fffffff7fd0 "ADD HFJJDKS", instr_bin_str=0x7fffffff7910 "") at asm_parser.c:106
+
+Program received signal SIGSEGV, Segmentation fault.
+__strcpy_ssse3 () at ../sysdeps/x86_64/multiarch/strcpy-ssse3.S:2503
+Error detected on fd 0
+error detected on stdin
